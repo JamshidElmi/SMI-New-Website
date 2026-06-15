@@ -27,9 +27,9 @@
 
 /* === Default logo card (un-scrolled) === */
 .logo-shape{position:relative;width:338px;height:130px;flex-shrink:0;background:#fff;
-  clip-path:path("M0 0H338V10C338 4.5 333.5 0 328 0H311C304 0 300 4 297 11L263 92C260 99 254 103 246 103H83C75 103 69 99 66 92L32 11C29 4 24 0 17 0H0V0Z");
-  -webkit-clip-path:path("M0 0H338V10C338 4.5 333.5 0 328 0H311C304 0 300 4 297 11L263 92C260 99 254 103 246 103H83C75 103 69 99 66 92L32 11C29 4 24 0 17 0H0V0Z");
-  box-shadow:0 12px 28px rgba(0,0,0,.18)}
+ clip-path: path("M0 0H338V0C388 4.5 333.5 0 500 0H311C304 0 300 4 297 11L263 92C260 99 254 103 246 103H83C75 103 69 99 66 92L32 11C29 4 24 0 17 0H0Z");
+
+  -webkit-clip-path: path("M0 0H338V0C388 4.5 333.5 0 500 0H311C304 0 300 4 297 11L263 92C260 99 254 103 246 103H83C75 103 69 99 66 92L32 11C29 4 24 0 17 0H0Z");  box-shadow:0 12px 28px rgba(0,0,0,.18)}
 .logo{position:absolute;top:20px;left:50%;transform:translateX(-50%);display:flex;align-items:center;justify-content:center;gap:10px;width:78%}
 .logo img{height:70px;width:auto;object-fit:contain}
 .logo .logo-sticky{display:none}

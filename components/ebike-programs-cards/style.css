@@ -1,0 +1,25 @@
+.ebk-cards{padding:100px 0;background:var(--soft)}
+.ebk-cards-head{text-align:center;max-width:700px;margin:0 auto 56px}
+.ebk-kicker{display:inline-block;color:var(--smi-green);font-size:12px;text-transform:uppercase;letter-spacing:.28em;font-weight:800;margin-bottom:12px}
+.ebk-cards-head h2{margin:0 0 18px}
+.ebk-cards-head p{color:var(--muted);font-size:21px;line-height:1.6;margin:0}
+
+.ebk-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+
+.ebk-card{background:#fff;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .3s ease, box-shadow .3s ease;cursor:default}
+.ebk-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+
+.ebk-card-img{position:relative;height:280px;overflow:hidden}
+.ebk-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.ebk-card:hover .ebk-card-img img{transform:scale(1.05)}
+.ebk-card-tag{position:absolute;top:16px;left:16px;z-index:2;display:inline-block;font-size:11px;text-transform:uppercase;letter-spacing:.22em;font-weight:800;color:var(--smi-blue-900);background:rgba(255,255,255,.92);backdrop-filter:blur(4px);padding:6px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.6)}
+
+.ebk-card-body{padding:36px 32px 40px}
+.ebk-card-body h3{font-size:26px;margin:0 0 16px;color:var(--smi-blue);font-weight:800;text-transform:uppercase;letter-spacing:.05em}
+.ebk-card-body p{color:var(--muted);font-size:18px;margin:0 0 14px;line-height:1.6}
+.ebk-card-body p:last-of-type{margin-bottom:28px}
+
+@media(max-width:900px){
+  .ebk-grid{grid-template-columns:1fr}
+  .ebk-card-img{height:220px}
+}
