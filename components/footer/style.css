@@ -1,0 +1,4 @@
+.footer{background:var(--smi-blue-900);color:#cde2ec;padding:24px 0}
+.footer .wrap{display:flex;justify-content:space-between;gap:20px;align-items:center}
+.social{display:flex;gap:12px}
+.social img{height:30px;width:30px;border-radius:50%}

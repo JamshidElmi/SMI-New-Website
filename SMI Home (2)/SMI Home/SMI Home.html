@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Equitable Transportation | Shared Mobility Inc.</title>
+<meta name="description" content="Shared Mobility Inc. strives everyday to help build innovative shared transportation programs with local partners across the the country that help uplift the communities they serve." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --smi-blue:#05527E; --smi-blue-900:#033955; --smi-blue-800:#044A70; --smi-blue-600:#0B6799; --smi-blue-100:#E8F3F8;
+  --smi-green:#8DC641; --smi-green-900:#4E7D20; --smi-green-700:#6EA529; --smi-green-100:#F1F8E8;
+  --ink:#123243; --muted:#5C7480; --line:#D7E5EC; --soft:#F4F9FB; --white:#FFFFFF;
+  --radius-sm:8px; --radius-md:14px; --radius-lg:24px; --container:1180px;
+  --shadow:0 18px 45px rgba(5,82,126,.14); --shadow-sm:0 8px 22px rgba(5,82,126,.10);
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:"Dosis",Arial,sans-serif;color:var(--ink);background:var(--soft);font-size:18px;line-height:1.55;letter-spacing:.01em} a{color:inherit;text-decoration:none} img{max-width:100%;display:block}.wrap{max-width:var(--container);margin:auto;padding:0 28px}.topbar{position:sticky;top:0;z-index:30;}
+.topstrip{background:#fff;color:#555;font-size:14px}
+.topstrip-inner{max-width:var(--container);margin:0 auto;padding:14px 28px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.topstrip-left{display:flex;gap:28px;font-weight:600}
+.topstrip-left a{color:#444;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.topstrip-left svg{color:var(--smi-green)}
+.topstrip-right{font-weight:700;letter-spacing:.04em;color:#5C7480;text-transform:uppercase;font-size:13px}
+.topstrip-right .hl{color:#E9472E}
+.nav-row{position:relative;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 28px;max-width:var(--container);margin:0 auto;z-index:4;transition:height .25s ease}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;width:100%;height:100%}
+.topbar.scrolled .topstrip{position:absolute;top:-200px;left:0;right:0;visibility:hidden;pointer-events:none}
+.topbar.scrolled{background:#fff;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+.topbar.scrolled .nav-row{height:72px;background:transparent;align-items:stretch;padding:0;position:relative;box-shadow:none}
+.topbar.scrolled .nav-inner{max-width:var(--container);margin:0 auto;padding:0 28px;width:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.topbar.scrolled .nav-row{display:flex;align-items:center;padding:0 28px}
+.topbar.scrolled .logo-shape{width:auto;min-width:200px;flex-shrink:0}
+.topbar.scrolled .logo-shape{height:48px;width:auto;min-width:200px;background:transparent;box-shadow:none;clip-path:none;-webkit-clip-path:none;flex-shrink:0}
+.topbar.scrolled .logo{position:static;transform:none;width:auto;justify-content:flex-start}
+.topbar.scrolled .logo img{height:38px;content:url("https://static.wixstatic.com/media/0e9a2c_3b8cc4a12b59445aaf7585ab9fc46bcf~mv2.png/v1/fill/w_368,h_38,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/powered-by-menu-bar.png")}
+.topbar.scrolled .nav-links{gap:22px}
+.topbar.scrolled .nav-links a{color:var(--ink)}
+.topbar.scrolled .nav-links a:hover{color:var(--smi-green)}
+.logo-shape{position:relative;width:338px;height:130px;flex-shrink:0;background:#fff;
+  clip-path:path("M0 0H338V10C338 4.5 333.5 0 328 0H311C304 0 300 4 297 11L263 92C260 99 254 103 246 103H83C75 103 69 99 66 92L32 11C29 4 24 0 17 0H0V0Z");
+  -webkit-clip-path:path("M0 0H338V10C338 4.5 333.5 0 328 0H311C304 0 300 4 297 11L263 92C260 99 254 103 246 103H83C75 103 69 99 66 92L32 11C29 4 24 0 17 0H0V0Z");
+  box-shadow:0 12px 28px rgba(0,0,0,.18)}
+.logo{position:absolute;top:20px;left:50%;transform:translateX(-50%);display:flex;align-items:center;justify-content:center;gap:10px;width:78%}
+.logo img{height:70px;width:auto;object-fit:contain}
+.topbar.scrolled .logo img{content:url("https://static.wixstatic.com/media/0e9a2c_3b8cc4a12b59445aaf7585ab9fc46bcf~mv2.png/v1/fill/w_368,h_38,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/powered-by-menu-bar.png")}
+.nav-links{display:flex;align-items:center;gap:24px;font-size:15px;font-weight:700}
+.nav-links a{color:var(--white);text-decoration:none;text-transform:uppercase;letter-spacing:.14em;font-size:13px;transition:color .15s ease}
+.nav-links a:hover{color:var(--smi-green)}
+.nav-cta{display:flex;align-items:center}
+.btn-pill{font-family:"Dosis",Arial,sans-serif;font-weight:800;font-size:14px;letter-spacing:.08em;color:#fff;background:var(--smi-blue);border:2px solid var(--smi-green);padding:14px 28px;border-radius:100px;cursor:pointer;text-transform:uppercase;transition:.2s ease}
+.btn-pill:hover{background:var(--smi-green);color:var(--smi-blue-900)}
+@media(max-width:900px){
+  .nav-links,.nav-cta{display:none}
+  .logo-shape{width:300px;height:115px}
+  .logo{top:30px}
+}
+@media(max-width:760px){
+  .topstrip-inner{align-items:flex-start}
+  .topstrip-left{flex-direction:column;gap:8px}
+}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:2px solid var(--smi-green);border-radius:999px;padding:12px 28px;text-transform:uppercase;letter-spacing:.16em;font-weight:800;font-size:14px;background:var(--smi-blue);color:white;box-shadow:0 8px 18px rgba(5,82,126,.12);transition:.2s ease}.btn:hover{background:var(--smi-green);color:var(--smi-blue-900);transform:translateY(-2px)}.btn.light{background:white;color:var(--smi-blue)}.btn.light:hover{background:var(--smi-green);color:var(--smi-blue-900)}
+.hero{min-height:640px;display:grid;align-items:end;position:relative;overflow:hidden;background:#0b3148;margin-top:0;padding-top:100px;top: -150px;}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,57,85,.86),rgba(3,57,85,.58) 43%,rgba(3,57,85,.16)),url('./imgs/hero.png') center/cover no-repeat}.hero:after{content:"";position:absolute;inset:auto 0 0 0;height:9px;background:linear-gradient(90deg,var(--smi-green),var(--smi-blue))}.hero-content{position:relative;z-index:1;padding:106px 0 86px;color:white}.eyebrow{display:inline-flex;color:var(--smi-green);font-size:13px;text-transform:uppercase;letter-spacing:.2em;font-weight:800;margin-bottom:22px}.hero h1{margin:0;font-size:clamp(48px,6.8vw,92px);line-height:.94;text-transform:uppercase;letter-spacing:.08em;font-weight:800;max-width:1050px}.hero p{font-size:25px;max-width:720px;color:#e7f2f7;margin:22px 0 30px}.section{padding:78px 0;background:white}.section.alt{background:var(--soft)}.section.blue{background:var(--smi-blue-900);color:white}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:28px}.section h2{font-size:clamp(34px,4vw,56px);line-height:1;text-transform:uppercase;letter-spacing:.09em;margin:0;color:var(--smi-blue);font-weight:800}.section.blue h2{color:white}.section-kicker{color:var(--muted);font-size:22px;margin-top:6px}.section.blue .section-kicker{color:#cde2ec}.services{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}.service-card{background:white;border:1px solid var(--line);border-radius:var(--radius-md);padding:24px 20px;box-shadow:var(--shadow-sm);min-height:235px}.service-card h3{margin:0 0 12px;color:var(--smi-blue);font-size:20px;line-height:1.05;text-transform:uppercase;letter-spacing:.08em}.service-card p{margin:0;color:var(--muted);font-size:17px}.feature{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}.feature + .feature{margin-top:64px}.feature.reverse .media{order:2}.copy h2{margin-bottom:18px}.copy p{margin:0 0 18px;color:var(--muted);font-size:21px}.media{border-radius:var(--radius-md);overflow:hidden;box-shadow:var(--shadow);position:relative}.media img{width:100%;height:455px;object-fit:cover}.media:after{content:"";position:absolute;inset:0;border:1px solid rgba(255,255,255,.42);border-radius:var(--radius-md);pointer-events:none}.projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.project-card{min-height:305px;border-radius:var(--radius-sm);overflow:hidden;position:relative;background:#123;color:white;display:flex;align-items:end}.project-card:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(3,57,85,.78),rgba(3,57,85,.22));z-index:1}.project-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.98)}.project-card-content{position:relative;z-index:2;padding:28px}.project-card h3{margin:0 0 10px;font-size:26px;line-height:1.05;text-transform:uppercase;letter-spacing:.1em}.project-card p{margin:0 0 18px;max-width:450px;color:#dfeef4}.project-card .btn{padding:9px 20px;font-size:12px}.partners{display:flex;align-items:center;justify-content:center;background:white;border:1px solid var(--line);border-radius:var(--radius-md);min-height:150px;box-shadow:var(--shadow-sm)}.team-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}.person{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:var(--radius-md);padding:18px;text-align:center}.person img{width:112px;height:112px;border-radius:50%;object-fit:cover;margin:0 auto 14px;border:3px solid var(--smi-green)}.person h3{font-size:19px;line-height:1.08;text-transform:uppercase;letter-spacing:.08em;margin:0}.person .role{color:var(--smi-green);font-weight:800;margin:4px 0 10px}.person p{font-size:16px;color:#dcebf2;margin:0}.history{display:grid;grid-template-columns:1fr .65fr;gap:36px;align-items:center}.history p{font-size:21px;color:var(--muted)}.history-img{border-radius:var(--radius-md);overflow:hidden;box-shadow:var(--shadow)}.history-img img{height:360px;width:100%;object-fit:cover}.contact{background:var(--smi-blue-800);color:white}.contact h2{color:white}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:42px}.contact-info p{font-size:21px;color:#e3f1f6}.form{display:grid;grid-template-columns:1fr 1fr;gap:14px}.form input,.form textarea{width:100%;border:2px solid rgba(255,255,255,.55);background:white;border-radius:var(--radius-sm);padding:13px 14px;font:inherit;color:var(--ink)}.form textarea{grid-column:1/-1;min-height:116px}.form button{grid-column:1/-1}.footer{background:var(--smi-blue-900);color:#cde2ec;padding:24px 0}.footer .wrap{display:flex;justify-content:space-between;gap:20px;align-items:center}.social{display:flex;gap:12px}.social img{height:30px;width:30px;border-radius:50%}@media(max-width:980px){.menu{display:none}.services,.team-grid{grid-template-columns:repeat(2,1fr)}.feature,.history,.contact-grid{grid-template-columns:1fr}.feature.reverse .media{order:0}.projects-grid{grid-template-columns:1fr}.hero{min-height:560px}}@media(max-width:620px){.wrap{padding:0 20px}.services,.team-grid,.form{grid-template-columns:1fr}.hero h1{font-size:42px}.hero p{font-size:21px}.section{padding:56px 0}.section-head{display:block}.media img{height:320px}.footer .wrap{display:block}.social{margin-top:14px}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topstrip">
+    <div class="topstrip-inner">
+      <div class="topstrip-left">
+        <a href="tel:+1234567890">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 11.19 18.85a19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          +1 (234) 567 890
+        </a>
+        <a href="mailto:Info@sharedmobility.org">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          INFO@SHAREDMOBILITY.ORG
+        </a>
+      </div>
+      <div class="topstrip-right">
+        Next E-Bike Voucher Drawing is <span class="hl">July 1, 2026</span> &raquo;
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-row">
+    <div class="nav-inner">
+      <div class="logo-shape">
+        <a class="logo" href="#" aria-label="Shared Mobility Inc. Home">
+          <img src="https://static.wixstatic.com/media/d099e1_8b16fb622b1f41c4bdc7bc46ab8116ca~mv2.png/v1/fill/w_90,h_80,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/smi_logo.png" alt="Shared Mobility Inc.">
+        </a>
+      </div>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#what-we-do">What We Do</a>
+        <a href="#partners">Partners</a>
+        <a href="#team">Our Team</a>
+        <a href="#projects">Our Work</a>
+        <a href="#rebates">Rebates</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn-pill" href="#contact">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="wrap hero-content">
+    <span class="eyebrow">Shared Mobility Inc.</span>
+    <h1>We believe that affordable, accessible, and equitable mobility is a human right</h1>
+    <p>We strive everyday to help build innovative shared transportation programs with local partners across the country that help uplift the communities they serve.</p>
+    <a class="btn" href="#what-we-do">What We Do</a>
+  </div>
+</section>
+<section id="what-we-do" class="section alt">
+  <div class="wrap">
+    <div class="section-head"><div><h2>What We Do</h2></div></div>
+    <div class="services">
+      <article class="service-card"><h3>Micromobility</h3><p>Micromobility systems are a vital component of a region’s transportation system. Electric and conventional micromobility systems are a backbone of active transportation and are most effective when integrated with other programs.</p></article>
+      <article class="service-card"><h3>E-bike Rebates</h3><p>E-bike rebates expand private ownership by receding out-of-pocket costs for people with limited transportation options. Our team is proud to have launched the first e-bike rebate programs in New York State, increasing private access to New Yorkers</p></article>
+      <article class="service-card"><h3>Carsharing</h3><p>Our roots trace back to Buffalo CarShare and we continue to find ways to build equitable carsharing.</p></article>
+      <article class="service-card"><h3>Strategic Mobility Planning</h3><p>A foundation of our work is working directly with municipalities, community-based organizations, and others in the communities our programs serve. Coordination and open-dialogue is important to making shared mobility systems open and equitable for everyone.</p></article>
+      <article class="service-card"><h3>Demonstrations and Pilots</h3><p>No successful shared mobility program can be put in place without progressive, intuitive, and locally-focused education efforts. Demonstrations and pilots are a crucial piece of our work.</p></article>
+    </div>
+  </div>
+</section>
+<section id="rebates" class="section">
+  <div class="wrap">
+    <div class="feature">
+      <div class="copy"><h2>E-Bike Incentive Programs</h2><p>By providing targeted incentives that directly improve personal transportation, we help make e-bike ownership more attainable. E-bike technology is transforming mobility, but for many, the upfront cost—especially for safety-compliant models from local bike shops—is just out of reach. Through partnerships with cities, states, community groups, and philanthropic organizations, we offer point-of-sale rebates that make e-bikes more affordable and accessible.</p><p>Learn more about our e-bike incentive work by clicking the button below</p><a class="btn" href="https://www.sharedmobility.org/e-bike-rebates">Learn More Here</a></div>
+      <div class="media"><img src="https://static.wixstatic.com/media/a78fb0_d5f72fd8b5584ea0a3a080a16f6bf7df~mv2.jpg/v1/crop/x_0,y_123,w_664,h_666/fill/w_860,h_760,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/FirstNYSEBIPRecipient.jpg" alt="FirstNYSEBIPRecipient.jpg"></div>
+    </div>
+    <div id="libraries" class="feature reverse">
+      <div class="copy"><h2>E-bike Libraries</h2><p>We are partnered with local community-based organizations around the country to launch community-controlled transportation options that are completely free to use. E-Bike Libraries provide access to pedal assist e-bikes through programming models designed by and for marginalized communities.</p><p>Learn more about our E-Bike Library work by clicking the button below</p><a class="btn" href="https://www.sharedmobility.org/ebike-libraries">Learn More Here</a></div>
+      <div class="media"><img src="https://static.wixstatic.com/media/d099e1_75dff057299e4d5297551d83a0d588fc~mv2.jpg/v1/crop/x_0,y_422,w_3376,h_3376/fill/w_860,h_760,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e-bike-2021.jpg" alt="e-bike-2021.jpg"></div>
+    </div>
+  </div>
+</section>
+<section id="projects" class="section blue">
+  <div class="wrap">
+    <div class="section-head"><div><h2>Projects</h2></div></div>
+    <div class="projects-grid">
+      <article class="project-card"><img src="https://static.wixstatic.com/media/d099e1_c648d5a3ef9145bdbef0fb43efe987f8~mv2.jpg/v1/fill/w_900,h_520,q_90,enc_avif,quality_auto/d099e1_c648d5a3ef9145bdbef0fb43efe987f8~mv2.jpg" alt="Project image"><div class="project-card-content"><h3>E-Bike Libraries</h3><p>We are partnered with local community-based organizations around the country to launch community-controlled transportation options that are completely free to use.</p><a class="btn light" href="https://www.sharedmobility.org/ebike-libraries">View Project</a></div></article>
+      <article class="project-card"><img src="https://static.wixstatic.com/media/d099e1_c257e35cdff847e8a7bfd8800c5926d5~mv2.jpg/v1/fill/w_900,h_520,q_90,enc_avif,quality_auto/d099e1_c257e35cdff847e8a7bfd8800c5926d5~mv2.jpg" alt="Project image"><div class="project-card-content"><h3>E-Bike Rebates</h3><p>E-bike rebates expand private ownership by receding out-of-pocket costs for people with limited transportation options.</p><a class="btn light" href="https://www.sharedmobility.org/e-bike-rebates">View Project</a></div></article>
+      <article class="project-card"><img src="https://static.wixstatic.com/media/d099e1_c6ae199a13f0441284c05be6aa4fe129~mv2.png/v1/fill/w_900,h_520,q_90,enc_avif,quality_auto/d099e1_c6ae199a13f0441284c05be6aa4fe129~mv2.png" alt="Project image"><div class="project-card-content"><h3>Project MOVER</h3><p>Project MOVER</p><a class="btn light" href="https://www.sharedmobility.org/e-bike-rebates/new-york/westchester">View Project</a></div></article>
+      <article class="project-card"><img src="https://static.wixstatic.com/media/d099e1_45e2ac8f1d5842eea84d834f64f40e28~mv2.jpg/v1/fill/w_900,h_520,q_90,enc_avif,quality_auto/d099e1_45e2ac8f1d5842eea84d834f64f40e28~mv2.jpg" alt="Project image"><div class="project-card-content"><h3>Research</h3><p>Research</p><a class="btn light" href="https://www.sharedmobility.org/research">View Project</a></div></article>
+    </div>
+  </div>
+</section>
+<section id="partners" class="section alt"><div class="wrap"><div class="section-head"><h2>Partners</h2></div><div class="partners"><img src="https://static.wixstatic.com/media/d099e1_b63345d1ca97466dba0957ec4f9bce4f~mv2.jpg/v1/fill/w_351,h_201,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mobility_Development.jpg" alt="Mobility_Development.jpg"></div></div></section>
+<section id="team" class="section blue"><div class="wrap"><div class="section-head"><h2>Our Team</h2></div><div class="team-grid">
+<article class="person"><img src="https://static.wixstatic.com/media/d099e1_eef768f152734f3a8509747b69e81cae~mv2.png/v1/fill/w_216,h_217,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MikeG.png" alt="MikeG.png"><h3>Mike Galligano</h3><p class="role">CEO</p><p>Mike led the creation of Shared Mobility Inc. and has been instrumental in the organization’s work since the formation of Buffalo CarShare. He serves as the CEO and is responsible for growing the organization’s work in equitable shared transportation nationwide.</p></article>
+<article class="person"><img src="https://static.wixstatic.com/media/d099e1_a9566e3553404fd09d0ec212f1daa70b~mv2.jpg/v1/fill/w_216,h_217,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/anders_headshot.jpg" alt="anders_headshot.jpg"><h3>Anders Gunnersen</h3><p class="role">Chief Financial Officer</p><p>As CFO, Anders has helped advance and grow SMI as it has branched out from providing innovative shared mobility solutions in Western New York to working at a nationwide scope. When he is not SMI’s CFO, Anders and his partner manage an all-organic, urban farm on Buffalo’s East Side.</p></article>
+<article class="person"><img src="https://static.wixstatic.com/media/d099e1_323dac8f27264eb3987b7d7b829aa0a1~mv2.jpg/v1/fill/w_216,h_217,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Simon%20Husted_edited.jpg" alt="Simon Husted_edited.jpg"><h3>Simon Husted</h3><p class="role">Marketing & Communications Coordinator</p><p>Simon initiates all communication on behalf of Reddy Bikeshare, as well as forge stronger relationships with community partners. Simon is an avid bicyclist, transit rider, and an advocate for more active transportation options.</p></article>
+<article class="person"><img src="https://static.wixstatic.com/media/a78fb0_d614c840969e4f2b9707e63c776ab76d~mv2.jpg/v1/crop/x_0,y_133,w_1179,h_1218/fill/w_210,h_217,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_5097.jpg" alt="IMG_5097.jpg"><h3>Stephen Bratspis</h3><p class="role">Operations and Logistics manager - CDPHP Cylce!</p><p>Steve leads the operations and logistics of CDPHP Cycle! in New York's Capital Region. He also supports SMI's various initiatives across New York State. Steve brings a diverse wealth of experience to his role to creatively identify innovations in bikeshare operations.</p></article>
+<article class="person"><img src="https://static.wixstatic.com/media/d099e1_abc74fd4a17b477eaa471847f8ba0e4b~mv2.jpg/v1/crop/x_31,y_0,w_923,h_927/fill/w_216,h_217,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/tyler.jpg" alt="tyler.jpg"><h3>Tyler Madell</h3><p class="role">Program Director</p><p>Tyler’s role is focused on continuous improvement and innovation of SMI’s programs and the partners the organization works with. His research and development work has been essential to new shared mobility initiatives from coast-to-coast.</p></article>
+</div></div></section>
+<section class="section"><div class="wrap history"><div><h2>Our History</h2><p>Shared Mobility Inc. (SMI) of Buffalo, New York, is a transportation solutions nonprofit that focuses on cutting-edge technology and best practices to build mobility systems that serve disadvantaged communities in small and mid-sized markets. These communities are not traditional markets for shared mobility operators, and SMI’s work often requires tailoring mobility solutions to fit the needs of each area.</p><p>Founded in 2009 as Buffalo CarShare, SMI has transitioned to work across the mobility spectrum. Throughout its 10 years of experience, SMI has worked across the shared mobility spectrum in the fundraising, deployment, growth, and evaluation of bikesharing, carsharing, volunteer transportation, vanpooling, and transportation demand management programs. It seeks to apply the same social-equity focused mindset to its nationwide portfolio of projects.</p></div><div class="history-img"><img src="https://static.wixstatic.com/media/d099e1_3f95132576dc4cc0af832c108356d846~mv2.jpg/v1/fill/w_900,h_650,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/d099e1_3f95132576dc4cc0af832c108356d846~mv2.jpg" alt="under_construction_image.jpg"></div></div></section>
+<section id="contact" class="section contact"><div class="wrap contact-grid"><div class="contact-info"><h2>Contact Us</h2><p>640 Ellicott Street #441 Buffalo, NY 14203</p><p>Email. <a href="mailto:Info@sharedmobility.org">Info@sharedmobility.org</a></p></div><form class="form"><input aria-label="First Name" placeholder="First Name *"><input aria-label="Last Name" placeholder="Last Name *"><input aria-label="Email" placeholder="Email *" style="grid-column:1/-1"><textarea aria-label="How can we help?" placeholder="How can we help?"></textarea><button class="btn light" type="button">Submit</button></form></div></section>
+</main>
+<footer class="footer"><div class="wrap"><p>© 2025 Shared Mobility Inc.</p><div class="social"><img src="https://static.wixstatic.com/media/da7ef6dd1302486c9a67baebe4b364bc.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/da7ef6dd1302486c9a67baebe4b364bc.png" alt="Instagram"><img src="https://static.wixstatic.com/media/e0678ef25486466ba65ef6ad47b559e1.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e0678ef25486466ba65ef6ad47b559e1.png" alt="Facebook"><img src="https://static.wixstatic.com/media/f61c7a3b4b4947b28511a25034973383.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f61c7a3b4b4947b28511a25034973383.png" alt="LinkedIn"></div></div></footer>
+<script>
+  (function(){
+    const topbar = document.querySelector('.topbar');
+    if(!topbar) return;
+    const topstrip = topbar.querySelector('.topstrip');
+    const trigger = topstrip ? topstrip.offsetHeight + 10 : 60;
+    let ticking = false;
+    const update = () => {
+      topbar.classList.toggle('scrolled', window.scrollY > trigger);
+      ticking = false;
+    };
+    window.addEventListener('scroll', () => {
+      if(!ticking){ requestAnimationFrame(update); ticking = true; }
+    }, { passive: true });
+    update();
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+/* Variant Selector — right-edge floating panel */
+.vs-section {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+
+.vs-section > [data-component] {
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+}
+
+.vs-panel {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.vs-icon {
+  width: 36px;
+  height: 36px;
+  background: var(--smi-blue);
+  color: #fff;
+  border-radius: 8px 0 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity .25s ease, background .25s ease, width .25s ease;
+}
+
+.vs-icon:hover {
+  opacity: 1;
+  background: var(--smi-green);
+}
+
+.vs-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: var(--smi-blue-800);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 10px;
+  padding: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(10px);
+  transition: opacity .25s ease, transform .25s ease, visibility .25s;
+  min-width: 140px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.3);
+}
+
+.vs-panel:hover .vs-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.vs-option {
+  background: none;
+  border: 1px solid transparent;
+  color: #c4d6e2;
+  font-family: 'Dosis', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+  white-space: nowrap;
+  transition: background .2s ease, color .2s ease, border-color .2s ease;
+}
+
+.vs-option:hover {
+  background: rgba(255,255,255,.1);
+  color: #fff;
+}
+
+.vs-active {
+  background: var(--smi-green);
+  color: var(--smi-blue-900);
+  border-color: var(--smi-green);
+  font-weight: 800;
+}
+
+.vs-active:hover {
+  background: #9ed04e;
+  color: var(--smi-blue-900);
+}
+
+/* Blue sections: adjust colors */
+.section.blue .vs-icon,
+.section.dark .vs-icon {
+  background: rgba(255,255,255,.15);
+}
+
+.section.blue .vs-menu,
+.section.dark .vs-menu {
+  background: var(--smi-blue-900);
+}
+
+/* Alt sections */
+.section.alt .vs-icon {
+  background: var(--smi-blue);
+}
+
+/* Hide on small screens */
+@media (max-width: 768px) {
+  .vs-panel { display: none; }
+}

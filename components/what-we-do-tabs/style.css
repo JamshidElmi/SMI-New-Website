@@ -1,0 +1,25 @@
+.wwd-tabs{background:#0b3148;color:#fff;padding:110px 0;position:relative;overflow:hidden}
+.wwd-tabs:before{content:"";position:absolute;top:-120px;right:-120px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(141,198,65,.18),transparent 70%);pointer-events:none}
+
+.wwd-split{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:flex-start}
+.wwd-aside{position:sticky;top:120px}
+.wwd-tag{display:inline-block;color:var(--smi-green);font-size:12px;text-transform:uppercase;letter-spacing:.3em;font-weight:800;margin-bottom:18px;padding:6px 12px;border:1px solid rgba(141,198,65,.4);border-radius:999px}
+.wwd-aside h2{font-size:clamp(32px,3.4vw,44px);line-height:1.05;color:#fff;text-transform:none;letter-spacing:.01em;margin:0 0 18px;font-weight:800}
+.wwd-lead{color:#a8c2cf;font-size:18px;line-height:1.55;margin:0 0 28px;max-width:360px}
+.wwd-cta{display:inline-block;color:var(--smi-green);font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.12em;text-decoration:none;border-bottom:2px solid var(--smi-green);padding-bottom:6px;transition:color .2s ease}
+.wwd-cta:hover{color:#fff;border-color:#fff}
+
+.wwd-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column}
+.wwd-row{display:grid;grid-template-columns:80px 1fr;gap:24px;padding:28px 0;border-bottom:1px solid rgba(255,255,255,.12);transition:padding .25s ease}
+.wwd-row:first-child{padding-top:0}
+.wwd-row:hover{padding-left:8px}
+.wwd-num{font-family:"Dosis",Arial,sans-serif;font-size:42px;font-weight:800;color:var(--smi-green);line-height:1;letter-spacing:-.02em}
+.wwd-body h3{font-size:22px;text-transform:uppercase;letter-spacing:.06em;color:#fff;margin:0 0 8px;font-weight:800}
+.wwd-body p{color:#c5d6df;font-size:16px;line-height:1.6;margin:0;max-width:540px}
+
+@media(max-width:900px){
+  .wwd-split{grid-template-columns:1fr;gap:48px}
+  .wwd-aside{position:static}
+  .wwd-row{grid-template-columns:60px 1fr;gap:18px}
+  .wwd-num{font-size:34px}
+}

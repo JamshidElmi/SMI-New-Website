@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>VeloBiz — About Us</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#161616;
+  --paper:#fff;
+  --vermilion:#E9472E;
+  --signal:#E2EA3C;
+  --overlay:rgba(10,10,10,0.68);
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Inter', sans-serif;
+  background:var(--ink);
+  color:#fff;
+}
+
+.topstrip{
+  background:var(--paper);
+  color:#555;
+  font-size:14px;
+}
+
+.topstrip-inner{
+  max-width:1320px;
+  margin:0 auto;
+  padding:14px 28px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.topstrip-left{
+  display:flex;
+  gap:28px;
+  font-weight:600;
+}
+
+.topstrip-left a{
+  color:#444;
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+}
+
+.topstrip-left svg{
+  color:var(--vermilion);
+}
+
+.topstrip-right{
+  font-weight:700;
+  letter-spacing:0.04em;
+  color:#777;
+  text-transform:uppercase;
+  font-size:13px;
+}
+
+.topstrip-right .hl{
+  color:var(--vermilion);
+}
+
+.hero{
+  position:relative;
+  min-height:540px;
+  background:
+    linear-gradient(var(--overlay), var(--overlay)),
+    url("https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=1600&q=80");
+  background-size:cover;
+  background-position:center;
+  overflow:hidden;
+}
+
+.nav{
+  position:relative;
+  max-width:1320px;
+  margin:0 auto;
+  padding:0 28px;
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  z-index:3;
+}
+
+/* Exact rounded SVG-style logo shape */
+.logo-shape{
+  position:relative;
+  width:338px;
+  height:130px;
+  flex-shrink:0;
+  background:#fff;
+
+  clip-path:path("M0 0H338V10C338 4.5 333.5 0 328 0H311C304 0 300 4 297 11L263 92C260 99 254 103 246 103H83C75 103 69 99 66 92L32 11C29 4 24 0 17 0H0V0Z");
+
+  -webkit-clip-path:path("M0 0H338V10C338 4.5 333.5 0 328 0H311C304 0 300 4 297 11L263 92C260 99 254 103 246 103H83C75 103 69 99 66 92L32 11C29 4 24 0 17 0H0V0Z");
+
+  box-shadow:0 12px 28px rgba(0,0,0,0.22);
+}
+
+.logo{
+  position:absolute;
+  top:38px;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  font-weight:800;
+  font-size:30px;
+  color:var(--ink);
+  letter-spacing:-0.04em;
+  white-space:nowrap;
+}
+
+.logo-mark{
+  width:38px;
+  height:30px;
+}
+
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:28px;
+  padding-top:42px;
+  font-size:15px;
+  font-weight:600;
+}
+
+.nav-links a{
+  color:#cfcfcf;
+  text-decoration:none;
+  transition:color .15s ease;
+}
+
+.nav-links a.active{
+  color:var(--signal);
+}
+
+.nav-links a:hover{
+  color:#fff;
+}
+
+.nav-cta{
+  padding-top:28px;
+}
+
+.btn-pill{
+  font-family:'Inter', sans-serif;
+  font-weight:800;
+  font-size:13px;
+  letter-spacing:0.04em;
+  color:var(--ink);
+  background:var(--signal);
+  border:none;
+  padding:18px 34px;
+  border-radius:100px;
+  cursor:pointer;
+}
+
+
+@media(max-width:900px){
+  .nav-links,
+  .nav-cta{
+    display:none;
+  }
+
+  .logo-shape{
+    width:300px;
+    height:115px;
+  }
+
+  .logo{
+    top:34px;
+    font-size:27px;
+  }
+}
+
+@media(max-width:760px){
+  .hero-content{
+    min-height:360px;
+    align-items:flex-start;
+    justify-content:center;
+    flex-direction:column;
+    padding-top:80px;
+    padding-bottom:60px;
+  }
+
+  .topstrip-inner{
+    align-items:flex-start;
+  }
+
+  .topstrip-left{
+    flex-direction:column;
+    gap:8px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topstrip">
+  <div class="topstrip-inner">
+    <div class="topstrip-left">
+      <a href="tel:+12345678900">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 11.19 18.85a19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +1 (234) 567 890
+      </a>
+
+      <a href="mailto:info@velobiz.com">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+        INFO@VELOBIZ.COM
+      </a>
+    </div>
+
+    <div class="topstrip-right">
+      GET <span class="hl">10% OFF</span> YOUR FIRST BIKE SERVICE &raquo;
+    </div>
+  </div>
+</div>
+
+<div class="hero">
+
+  <div class="nav">
+    <div class="logo-shape">
+      <div class="logo">
+        <svg class="logo-mark" viewBox="0 0 40 28" fill="none">
+          <path d="M3 7H24M0 14H27M3 21H24" stroke="#E9472E" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="24" cy="14" r="10" stroke="#E9472E" stroke-width="4"/>
+          <circle cx="24" cy="14" r="4" fill="#E9472E"/>
+        </svg>
+        <span>VeloBiz</span>
+      </div>
+    </div>
+
+    <div class="nav-links">
+      <a href="#" class="active">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Bike</a>
+      <a href="#">Page</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="nav-cta">
+      <button class="btn-pill">SCHEDULE SERVICE</button>
+    </div>
+  </div>
+
+
+
+</div>
+
+</body>
+</html>

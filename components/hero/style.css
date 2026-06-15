@@ -1,0 +1,7 @@
+.hero{min-height:640px;display:grid;align-items:end;position:relative;overflow:hidden;margin-top:0;padding-top:100px;top:-150px; bottom:0}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,57,85,.86),rgba(3,57,85,.58) 43%,rgba(3,57,85,.16)),url('../../imgs/hero.png') center/cover no-repeat}
+.hero:after{content:"";position:absolute;inset:auto 0 0 0;height:9px;background:linear-gradient(90deg,var(--smi-green),var(--smi-blue))}
+.hero-content{position:relative;z-index:1;padding:106px 0 86px;color:white}
+.eyebrow{display:inline-flex;color:var(--smi-green);font-size:13px;text-transform:uppercase;letter-spacing:.2em;font-weight:800;margin-bottom:22px}
+.hero h1{margin:0;font-size:clamp(48px,6.8vw,92px);line-height:.94;text-transform:uppercase;letter-spacing:.08em;font-weight:800;max-width:1050px}
+.hero p{font-size:25px;max-width:720px;color:#e7f2f7;margin:22px 0 30px}
