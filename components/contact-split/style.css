@@ -1,0 +1,19 @@
+.contact-sp{background:var(--smi-blue);color:white}
+.contact-sp-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:center}
+.contact-sp-eyebrow{display:inline-block;color:var(--smi-green);font-size:12px;text-transform:uppercase;letter-spacing:.28em;font-weight:800;margin-bottom:12px}
+.contact-sp-info h2{color:white;font-size:clamp(34px,4vw,48px);line-height:1;margin:0 0 20px;font-weight:800;text-transform:none;letter-spacing:.01em}
+.contact-sp-info p{color:#cde2ec;font-size:18px;line-height:1.6;margin:0 0 12px}
+.contact-sp-email{display:inline-block;color:var(--smi-green);font-size:18px;text-decoration:none;font-weight:600;margin-bottom:28px;transition:opacity .2s}
+.contact-sp-email:hover{opacity:.8}
+.contact-sp-social{display:flex;gap:14px}
+.contact-sp-social a{width:44px;height:44px;border-radius:50%;border:2px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;color:white;font-size:18px;text-decoration:none;transition:all .25s ease}
+.contact-sp-social a:hover{background:var(--smi-green);border-color:var(--smi-green);color:var(--smi-blue-900)}
+.contact-sp-form{background:rgba(255,255,255,.08);border-radius:var(--radius-md);padding:36px;border:1px solid rgba(255,255,255,.12)}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form input,.form textarea{width:100%;border:2px solid rgba(255,255,255,.55);background:white;border-radius:var(--radius-sm);padding:13px 14px;font:inherit;color:var(--ink)}
+.form textarea{grid-column:1/-1;min-height:116px}
+.form button{grid-column:1/-1}
+
+@media(max-width:900px){
+  .contact-sp-grid{grid-template-columns:1fr;gap:40px}
+}

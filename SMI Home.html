@@ -36,6 +36,7 @@
   <!-- <link rel="stylesheet" href="components/projects-list/style.css" data-component-style="projects-list"> -->
   <!-- <link rel="stylesheet" href="components/projects-mosaic/style.css" data-component-style="projects-mosaic"> -->
   <!-- <link rel="stylesheet" href="components/projects-spread/style.css" data-component-style="projects-spread"> -->
+  <!-- <link rel="stylesheet" href="components/projects-fullwidth/style.css" data-component-style="projects-fullwidth"> -->
 
   <link rel="stylesheet" href="components/partners/style.css" data-component-style="partners">
   <!-- <link rel="stylesheet" href="components/partners-marquee/style.css" data-component-style="partners-marquee"> -->
@@ -53,8 +54,14 @@
   <!-- <link rel="stylesheet" href="components/history-cards/style.css" data-component-style="history-cards"> -->
 
   <link rel="stylesheet" href="components/contact/style.css" data-component-style="contact">
+  <!-- <link rel="stylesheet" href="components/contact-centered/style.css" data-component-style="contact-centered"> -->
+  <!-- <link rel="stylesheet" href="components/contact-cards/style.css" data-component-style="contact-cards"> -->
+  <!-- <link rel="stylesheet" href="components/contact-split/style.css" data-component-style="contact-split"> -->
 
   <link rel="stylesheet" href="components/footer/style.css" data-component-style="footer">
+  <!-- <link rel="stylesheet" href="components/footer-columns/style.css" data-component-style="footer-columns"> -->
+  <!-- <link rel="stylesheet" href="components/footer-minimal/style.css" data-component-style="footer-minimal"> -->
+  <!-- <link rel="stylesheet" href="components/footer-expanded/style.css" data-component-style="footer-expanded"> -->
 
   <link rel="stylesheet" href="css/responsive.css">
 
@@ -75,7 +82,7 @@
       <div data-component="ebike-programs"></div>
     </div>
 
-    <div class="vs-section" data-variants="projects,projects-grid,projects-list,projects-mosaic,projects-spread">
+    <div class="vs-section" data-variants="projects,projects-grid,projects-list,projects-mosaic,projects-spread,projects-fullwidth">
       <div data-component="projects"></div>
     </div>
 
@@ -91,10 +98,14 @@
       <div data-component="history"></div>
     </div>
 
-    <div data-component="contact"></div>
+    <div class="vs-section" data-variants="contact,contact-centered,contact-cards,contact-split">
+      <div data-component="contact"></div>
+    </div>
   </main>
 
-  <div data-component="footer"></div>
+  <div class="vs-section" data-variants="footer,footer-columns,footer-minimal,footer-expanded">
+    <div data-component="footer"></div>
+  </div>
 
   <script src="js/component-loader.js" defer></script>
   <script src="js/main.js" defer></script>
