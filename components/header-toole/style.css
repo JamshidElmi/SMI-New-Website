@@ -1,0 +1,23 @@
+.topbar-toole{position:sticky;top:0;z-index:30}
+
+.nav-row-toole{background:var(--smi-blue);padding:0 40px;transition:box-shadow .3s ease}
+.topbar-toole.scrolled .nav-row-toole{box-shadow:0 4px 20px rgba(0,0,0,.2)}
+
+.nav-inner-toole{max-width:var(--container);margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:72px}
+
+.logo-toole{display:flex;align-items:center;flex-shrink:0}
+.logo-toole img{height:48px;width:auto;object-fit:contain}
+
+.nav-toole{display:flex;align-items:center;gap:0}
+
+.nav-toole a{color:white;text-decoration:none;text-transform:uppercase;letter-spacing:.16em;font-size:13px;font-weight:700;padding:10px 20px;border-radius:var(--radius-sm);position:relative;transition:color .25s ease;white-space:nowrap;z-index:0}
+.nav-toole a::before{content:"";position:absolute;inset:0;background:var(--smi-green);border-radius:var(--radius-sm);transform:scaleX(0);transform-origin:left;transition:transform .3s ease;z-index:-1}
+.nav-toole a:hover{color:white}
+.nav-toole a:hover::before{transform:scaleX(1)}
+
+.nav-sep{width:1px;height:20px;background:rgba(255,255,255,.3);margin:0 4px;flex-shrink:0}
+
+@media(max-width:900px){
+  .nav-toole{display:none}
+  .nav-row-toole{padding:0 20px}
+}

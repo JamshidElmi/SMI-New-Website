@@ -1,4 +1,8 @@
-.topbar{position:sticky;top:0;z-index:30;}
+.topbar{position:sticky;top:0;z-index:30}
+.topbar:not(.topbar-toole){position:absolute;left:0;right:0}
+
+/* When default header is absolute, collapse the wrapper */
+.vs-section:has(.topbar:not(.topbar-toole)){height:0;overflow:visible}
 
 .topstrip{background:#fff;color:#555;font-size:14px}
 .topstrip-inner{max-width:var(--container);margin:0 auto;padding:14px 28px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
