@@ -1,4 +1,4 @@
-.team-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .person{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:var(--radius-md);padding:18px;text-align:center}
 .person img{width:112px;height:112px;border-radius:50%;object-fit:cover;margin:0 auto 14px;border:3px solid var(--smi-green)}
 .person h3{font-size:19px;line-height:1.08;text-transform:uppercase;letter-spacing:.08em;margin:0}

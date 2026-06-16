@@ -4,9 +4,12 @@
 .footer-ex-brand p{font-size:15px;line-height:1.6;margin:0;color:#a3c1d1}
 .footer-ex-newsletter h4{color:white;font-size:14px;font-weight:700;margin:0 0 16px;text-transform:uppercase;letter-spacing:.1em}
 .footer-ex-form{display:flex;gap:10px}
-.footer-ex-form input{flex:1;border:2px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);border-radius:var(--radius-sm);padding:12px 16px;font:inherit;color:white;font-size:14px}
-.footer-ex-form input::placeholder{color:#7a9eb2}
-.footer-ex-form input:focus{outline:none;border-color:var(--smi-green)}
+.footer-ex-input-wrap{flex:1;position:relative;display:flex;align-items:center}
+.footer-ex-input-wrap input{width:100%;border:2px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);border-radius:var(--radius-sm);padding:12px 120px 12px 16px;font:inherit;color:white;font-size:14px}
+.footer-ex-input-wrap input::placeholder{color:#7a9eb2}
+.footer-ex-input-wrap input:focus{outline:none;border-color:var(--smi-green)}
+.footer-ex-subscribe{position:absolute;right:4px;top:50%;transform:translateY(-50%);background:var(--smi-green);color:var(--smi-blue-900);border:none;border-radius:var(--radius-sm);padding:10px 20px;font-family:"Dosis",Arial,sans-serif;font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:.08em;cursor:pointer;transition:background .2s ease,transform .2s ease; margin-right:2px}
+.footer-ex-subscribe:hover{background:white;transform:translateY(-50%) scale(1.03)}
 .footer-ex-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.12)}
 .footer-ex-col h4{color:white;font-size:14px;font-weight:700;margin:0 0 16px;text-transform:uppercase;letter-spacing:.1em}
 .footer-ex-col a{display:block;color:#a3c1d1;font-size:15px;text-decoration:none;padding:5px 0;transition:color .2s}
@@ -21,4 +24,6 @@
   .footer-ex-top{grid-template-columns:1fr}
   .footer-ex-grid{grid-template-columns:1fr}
   .footer-ex-form{flex-direction:column}
+  .footer-ex-input-wrap input{padding-right:120px; padding-left:12px}
+  .footer-ex-subscribe{padding:10px 30px; }
 }

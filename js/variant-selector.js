@@ -28,7 +28,7 @@
     if (document.querySelector('link[data-variant-style="' + name + '"]')) return;
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = 'components/' + name + '/style.css';
+    link.href = 'components/' + name + '/style.css?v=' + Date.now();
     link.dataset.variantStyle = name;
     document.head.appendChild(link);
   }

@@ -1,8 +1,8 @@
 .tm-cards{background:var(--soft);padding:110px 0}
-.tm-cards-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.tm-cards-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .tm-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-md);overflow:hidden;transition:transform .3s ease, box-shadow .3s ease}
 .tm-card:hover{transform:translateY(-6px);box-shadow:0 16px 32px rgba(5,82,126,.12)}
-.tm-card-img{background:var(--smi-blue-900);display:flex;align-items:center;justify-content:center;padding:24px 24px 0}
+.tm-card-img{background:var(--smi-blue-900);display:flex;align-items:center;justify-content:center;padding: 24px 24px 20px;}
 .tm-card-img img{width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid var(--smi-green);transition:transform .3s ease}
 .tm-card:hover .tm-card-img img{transform:scale(1.05)}
 .tm-card-body{padding:20px;text-align:center}
