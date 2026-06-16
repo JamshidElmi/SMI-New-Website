@@ -113,6 +113,13 @@
   background: var(--smi-blue);
 }
 
+/* Header section: section height is 0 so top:50% collapses to 0.
+   Force the panel into the nav-row area. */
+.vs-section:has(.topbar:not(.topbar-toole)) .vs-panel {
+  top: 80px;
+  transform: none;
+}
+
 /* Hide on small screens */
 @media (max-width: 768px) {
   .vs-panel { display: none; }
