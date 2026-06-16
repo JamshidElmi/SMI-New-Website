@@ -1,0 +1,43 @@
+.hist-toole{background:white;padding:0 0 110px;position:relative;overflow:hidden}
+.hist-toole-bg{position:absolute;inset:0;color:var(--smi-blue);pointer-events:none}
+.hist-toole-bg svg{width:100%;height:100%}
+.hist-toole-wrap{position:relative;z-index:1}
+
+.hist-toole-hero{position:relative;width:100%;height:580px;overflow:hidden}
+.hist-toole-hero img{width:100%;height:100%;object-fit:cover;display:block}
+.hist-toole-overlay{position:absolute;inset:0;background:rgba(3,57,85,.20)}
+
+.hist-toole-content{display:grid;grid-template-columns:0.4fr 0.6fr;gap:60px;align-items:start;padding:80px 0 72px}
+.hist-toole-label{display:block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.22em;color:var(--smi-green);margin-bottom:16px}
+.hist-toole-left h2{font-size:clamp(40px,5vw,64px);color:var(--smi-blue-900);margin:0;font-weight:800;text-transform:none;letter-spacing:.01em;line-height:1.08}
+.hist-toole-right p{font-size:21px;color:var(--muted);margin:0 0 24px;line-height:1.7}
+.hist-toole-right p:last-child{margin-bottom:0}
+
+.hist-toole-timeline{display:flex;align-items:center;justify-content:center;gap:0;padding:56px 0 0;border-top:1px solid rgba(5,82,126,.1);margin-top:8px}
+.hist-toole-stat{text-align:center;flex:0 0 auto;padding:0 28px}
+.hist-toole-stat-num{display:block;font-size:28px;font-weight:800;color:var(--smi-blue-900);margin-bottom:8px;letter-spacing:.02em}
+.hist-toole-stat-desc{display:block;font-size:13px;color:var(--muted);line-height:1.5;letter-spacing:.03em}
+.hist-toole-line{flex:1;height:2px;background:var(--smi-green);min-width:60px;max-width:140px;position:relative}
+.hist-toole-line::before{content:"";position:absolute;top:50%;left:0;transform:translateY(-50%);width:8px;height:8px;border-radius:50%;background:white;border:2px solid var(--smi-green)}
+.hist-toole-line::after{content:"";position:absolute;top:50%;right:0;transform:translateY(-50%);width:8px;height:8px;border-radius:50%;background:white;border:2px solid var(--smi-green)}
+.hist-toole-milestone{text-align:center;flex:0 0 auto;padding:0 20px}
+.hist-toole-milestone-text{font-size:14px;font-weight:700;color:var(--smi-blue-900);text-transform:uppercase;letter-spacing:.08em;line-height:1.4}
+
+@media(max-width:900px){
+  .hist-toole-hero{height:400px}
+  .hist-toole-content{grid-template-columns:1fr;gap:36px;padding:60px 0 56px}
+  .hist-toole-timeline{flex-wrap:wrap;gap:24px;padding:40px 0 0}
+  .hist-toole-line{min-width:40px;flex:1 1 40px}
+  .hist-toole-stat,.hist-toole-milestone{flex:1 1 100%}
+}
+@media(max-width:680px){
+  .hist-toole{padding:0 0 80px}
+  .hist-toole-hero{height:300px}
+  .hist-toole-content{padding:48px 0 44px}
+  .hist-toole-left h2{font-size:36px}
+  .hist-toole-right p{font-size:19px}
+  .hist-toole-timeline{flex-direction:column;gap:20px}
+  .hist-toole-line{width:2px;height:40px;min-width:0;max-width:none}
+  .hist-toole-line::before{top:0;left:50%;transform:translateX(-50%)}
+  .hist-toole-line::after{top:auto;bottom:0;left:50%;right:auto;transform:translateX(-50%)}
+}

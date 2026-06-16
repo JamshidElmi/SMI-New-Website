@@ -1,0 +1,174 @@
+.footer-toole {
+  background: var(--smi-blue-900);
+  color: #e0e0e0;
+  padding: 50px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+.footer-toole-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  padding-bottom: 40px;
+}
+.footer-toole-left h4 {
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+.footer-toole-social {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.footer-toole-social a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+.footer-toole-social a:hover {
+  background: var(--smi-green);
+  color: var(--smi-blue-900);
+}
+.footer-toole-newsletter {
+  display: inline-block;
+  background: white;
+  color: #333;
+  font-family: "Dosis", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 14px 28px;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 0.25s ease;
+}
+.footer-toole-newsletter:hover {
+  background: var(--smi-green);
+  color: #333;
+}
+.footer-toole-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 36px;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+.footer-toole-nav a {
+  color: white;
+  font-family: "Dosis", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+.footer-toole-nav a:hover {
+  color: var(--smi-green);
+}
+.footer-toole-nav a span {
+  margin-left: 2px;
+}
+.footer-toole-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 24px;
+}
+.footer-toole-legal {
+  display: flex;
+  gap: 28px;
+}
+.footer-toole-legal a {
+  color: #c8c8c8;
+  font-family: "Dosis", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+.footer-toole-legal a:hover {
+  color: white;
+}
+.footer-toole-legal a span {
+  margin-left: 2px;
+}
+.footer-toole-copy {
+  font-size: 12px;
+  color: #a0a0a0;
+  margin: 0;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+.footer-toole-topo {
+  width: 100%;
+  height: 180px;
+  background: var(--smi-blue-900);
+  position: relative;
+  overflow: hidden;
+}
+.footer-toole-topo::before,
+.footer-toole-topo::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat-x;
+  background-position: bottom center;
+}
+.footer-toole-topo::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"><path d="M0,140 C100,100 200,160 350,120 S550,80 700,130 S900,100 1050,140 S1200,110 1200,140"/><path d="M0,155 C80,120 180,170 320,135 S520,95 680,145 S880,115 1020,155 S1200,125 1200,155"/><path d="M0,170 C60,140 160,180 300,150 S500,110 660,160 S860,130 1000,170 S1200,140 1200,170"/></svg>');
+  background-size: 1200px 180px;
+  animation: topoScroll 40s linear infinite;
+}
+.footer-toole-topo::after {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="0.8"><path d="M0,130 C120,80 240,150 400,110 S600,70 760,125 S960,90 1100,130 S1200,100 1200,130"/><path d="M0,165 C90,130 210,175 360,145 S560,105 720,155 S920,125 1060,165 S1200,135 1200,165"/></svg>');
+  background-size: 1200px 180px;
+  animation: topoScroll 55s linear infinite reverse;
+}
+@keyframes topoScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 900px) {
+  .footer-toole-main {
+    flex-direction: column;
+    gap: 36px;
+  }
+  .footer-toole-nav {
+    gap: 14px 24px;
+  }
+  .footer-toole-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  .footer-toole-legal {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,131 @@
+.bg-cards {
+  padding: 100px 0;
+  background: white;
+}
+.bg-cards-head {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 56px;
+}
+.bg-kicker {
+  display: inline-block;
+  color: var(--smi-green);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+.bg-cards-head h2 {
+  margin: 0 0 16px;
+}
+.bg-cards-head p {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.bg-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.bg-card {
+  background: #fff;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.bg-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+}
+
+.bg-card-img {
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+.bg-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.bg-card:hover .bg-card-img img {
+  transform: scale(1.05);
+}
+.bg-card-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  color: var(--smi-blue-900);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(4px);
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.bg-card-body {
+  padding: 24px 24px 28px;
+}
+.bg-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.bg-card-author {
+  font-weight: 700;
+  color: var(--smi-blue-900);
+}
+.bg-card-dot {
+  color: var(--line);
+}
+.bg-card-body h3 {
+  font-size: 19px;
+  line-height: 1.3;
+  color: var(--smi-blue-900);
+  margin: 0 0 10px;
+  font-weight: 800;
+}
+.bg-card-body h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+.bg-card-body h3 a:hover {
+  color: var(--smi-green);
+}
+.bg-card-body p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.bg-cards-cta {
+  text-align: center;
+  margin-top: 48px;
+}
+
+@media (max-width: 900px) {
+  .bg-cards-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+}

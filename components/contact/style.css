@@ -1,8 +1,39 @@
-.contact{background:var(--smi-blue-800);color:white}
-.contact h2{color:white}
-.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:42px}
-.contact-info p{font-size:21px;color:#e3f1f6}
-.form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.form input,.form textarea{width:100%;border:2px solid rgba(255,255,255,.55);background:white;border-radius:var(--radius-sm);padding:13px 14px;font:inherit;color:var(--ink)}
-.form textarea{grid-column:1/-1;min-height:116px}
-.form button{grid-column:1/-1}
+.contact {
+  background: var(--smi-blue-800);
+  color: white;
+}
+.contact h2 {
+  color: white;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 42px;
+}
+.contact-info p {
+  font-size: 21px;
+  color: #e3f1f6;
+}
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.form input,
+.form textarea {
+  width: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  background: white;
+  border-radius: var(--radius-sm);
+  padding: 13px 14px;
+  font: inherit;
+  color: var(--ink);
+}
+.form textarea {
+  grid-column: 1/-1;
+  min-height: 116px;
+}
+.form button {
+  grid-column: 1/-1;
+  border-radius: var(--radius-sm);
+}

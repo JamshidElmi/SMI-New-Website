@@ -57,6 +57,6 @@ Read `SMI-Design-System-Rules.md` before creating or editing components. Key con
 - Font: **Dosis** (400–800)
 - Colors: SMI Blue `#05527E`, SMI Green `#8DC641`
 - Headings: uppercase, heavy weight, strong letter-spacing
-- Max content width: **1180px**
+- Max content width: **1380px**
 - Sections alternate between white and `var(--soft)` backgrounds
 - Corner radius uses `--radius-sm` (8px), `--radius-md` (16px), `--radius-lg` (24px)

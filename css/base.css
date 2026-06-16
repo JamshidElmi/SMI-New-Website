@@ -1,13 +1,50 @@
-:root{
-  --smi-blue:#05527E; --smi-blue-900:#033955; --smi-blue-800:#044A70; --smi-blue-600:#0B6799; --smi-blue-100:#E8F3F8;
-  --smi-green:#8DC641; --smi-green-900:#4E7D20; --smi-green-700:#6EA529; --smi-green-100:#F1F8E8;
-  --ink:#123243; --muted:#5C7480; --line:#D7E5EC; --soft:#F4F9FB; --white:#FFFFFF;
-  --radius-sm:8px; --radius-md:14px; --radius-lg:24px; --container:1180px;
-  --shadow:0 18px 45px rgba(5,82,126,.14); --shadow-sm:0 8px 22px rgba(5,82,126,.10);
+:root {
+  --smi-blue: #05527e;
+  --smi-blue-900: #033955;
+  --smi-blue-800: #044a70;
+  --smi-blue-600: #0b6799;
+  --smi-blue-100: #e8f3f8;
+  --smi-green: #8dc641;
+  --smi-green-900: #4e7d20;
+  --smi-green-700: #6ea529;
+  --smi-green-100: #f1f8e8;
+  --ink: #123243;
+  --muted: #5c7480;
+  --line: #d7e5ec;
+  --soft: #f4f9fb;
+  --white: #ffffff;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --container: 1380px;
+  --shadow: 0 18px 45px rgba(5, 82, 126, 0.14);
+  --shadow-sm: 0 8px 22px rgba(5, 82, 126, 0.1);
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:"Dosis",Arial,sans-serif;color:var(--ink);background:var(--soft);font-size:18px;line-height:1.55;letter-spacing:.01em}
-a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
-.wrap{max-width:var(--container);margin:auto;padding:0 28px}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Dosis", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--soft);
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.01em;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.wrap {
+  max-width: var(--container);
+  margin: auto;
+  padding: 0 28px;
+}

@@ -1,0 +1,83 @@
+.hero-toole {
+  display: grid;
+  align-items: end;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0;
+}
+.hero-toole:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      0deg,
+      rgba(3, 20, 30, 0.82) 0%,
+      rgba(3, 20, 30, 0.45) 50%,
+      rgba(3, 20, 30, 0.25) 100%
+    ),
+    url("../../imgs/hero.png") center/cover no-repeat;
+}
+.hero-toole:after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 5px;
+  background: var(--smi-green);
+}
+
+.hero-toole-content {
+  position: relative;
+  z-index: 1;
+  padding: 100px 0 100px;
+  color: white;
+}
+.hero-toole h1 {
+  margin: 0 0 28px;
+  font-size: clamp(46px, 5.5vw, 80px);
+  line-height: 0.95;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  color: white;
+}
+.hero-toole p {
+  font-size: 20px;
+  max-width: 980px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 40px;
+  line-height: 1.6;
+}
+
+.hero-toole-btn {
+  display: inline-block;
+  border: 2px solid var(--smi-green);
+  border-radius: var(--radius-sm);
+  padding: 14px 32px;
+  font-family: "Dosis", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: white;
+  background: transparent;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+.hero-toole-btn:hover {
+  background: var(--smi-green);
+  color: var(--smi-blue-900);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .hero-toole-content {
+    padding: 0 0 72px;
+  }
+  .hero-toole p {
+    font-size: 18px;
+  }
+}

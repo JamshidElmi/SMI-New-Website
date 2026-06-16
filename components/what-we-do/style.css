@@ -1,4 +1,26 @@
-.services{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
-.service-card{background:white;border:1px solid var(--line);border-radius:var(--radius-md);padding:24px 20px;box-shadow:var(--shadow-sm);min-height:235px}
-.service-card h3{margin:0 0 12px;color:var(--smi-blue);font-size:20px;line-height:1.05;text-transform:uppercase;letter-spacing:.08em}
-.service-card p{margin:0;color:var(--muted);font-size:17px}
+.services {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+.service-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 24px 20px;
+  box-shadow: var(--shadow-sm);
+  min-height: 235px;
+}
+.service-card h3 {
+  margin: 0 0 12px;
+  color: var(--smi-blue);
+  font-size: 20px;
+  line-height: 1.05;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.service-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+}

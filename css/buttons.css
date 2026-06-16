@@ -1,4 +1,29 @@
-.btn{display:inline-flex;align-items:center;justify-content:center;border:2px solid var(--smi-green);border-radius:999px;padding:12px 28px;text-transform:uppercase;letter-spacing:.16em;font-weight:800;font-size:14px;background:var(--smi-blue);color:white;box-shadow:0 8px 18px rgba(5,82,126,.12);transition:.2s ease}
-.btn:hover{background:var(--smi-green);color:var(--smi-blue-900);transform:translateY(-2px)}
-.btn.light{background:white;color:var(--smi-blue)}
-.btn.light:hover{background:var(--smi-green);color:var(--smi-blue-900)}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--smi-green);
+  border-radius: 999px;
+  padding: 12px 28px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 800;
+  font-size: 14px;
+  background: var(--smi-blue);
+  color: white;
+  box-shadow: 0 8px 18px rgba(5, 82, 126, 0.12);
+  transition: 0.2s ease;
+}
+.btn:hover {
+  background: var(--smi-green);
+  color: var(--smi-blue-900);
+  transform: translateY(-2px);
+}
+.btn.light {
+  background: white;
+  color: var(--smi-blue);
+}
+.btn.light:hover {
+  background: var(--smi-green);
+  color: var(--smi-blue-900);
+}

@@ -1,0 +1,124 @@
+.ebk-toole {
+  background: white;
+  padding: 100px 0 110px;
+  position: relative;
+  overflow: hidden;
+}
+.ebk-toole-bg {
+  position: absolute;
+  inset: 0;
+  color: var(--smi-blue);
+  pointer-events: none;
+}
+.ebk-toole-bg svg {
+  width: 100%;
+  height: 100%;
+}
+.ebk-toole-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.ebk-toole-row {
+  display: flex;
+  gap: 60px;
+  align-items: stretch;
+  height: 520px;
+}
+.ebk-toole-row + .ebk-toole-row {
+  margin-top: 120px;
+}
+
+.ebk-toole-media {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  flex: 0 0 55%;
+  height: 100%;
+}
+.ebk-toole-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+  border-radius: var(--radius-sm);
+}
+.ebk-toole-row:hover .ebk-toole-media img {
+  transform: scale(1.03);
+}
+
+.ebk-toole-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0 0 45%;
+  height: 100%;
+}
+
+.ebk-toole-reverse {
+  flex-direction: row;
+}
+
+.ebk-toole-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--smi-green);
+  margin-bottom: 16px;
+}
+.ebk-toole-copy h2 {
+  font-size: clamp(40px, 5vw, 64px);
+  color: var(--smi-blue-900);
+  margin: 0 0 24px;
+  font-weight: 800;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  line-height: 1.08;
+}
+.ebk-toole-copy p {
+  font-size: 21px;
+  color: var(--muted);
+  margin: 0 0 20px;
+  line-height: 1.65;
+}
+.ebk-toole-copy .btn {
+  margin-top: 8px;
+  border-radius: var(--radius-sm);
+  padding: 12px 28px;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .ebk-toole {
+    padding: 72px 0 80px;
+  }
+  .ebk-toole-row {
+    flex-direction: column;
+    gap: 36px;
+    height: auto;
+  }
+  .ebk-toole-row + .ebk-toole-row {
+    margin-top: 72px;
+  }
+  .ebk-toole-reverse {
+    flex-direction: column;
+  }
+  .ebk-toole-media {
+    flex: none;
+    height: 320px;
+    width: 100%;
+  }
+  .ebk-toole-copy {
+    flex: none;
+    height: auto;
+  }
+  .ebk-toole-copy h2 {
+    font-size: 36px;
+  }
+  .ebk-toole-copy p {
+    font-size: 19px;
+  }
+}

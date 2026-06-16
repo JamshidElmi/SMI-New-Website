@@ -21,6 +21,7 @@
   <!-- <link rel="stylesheet" href="components/header-toole/style.css" data-component-style="header-toole"> -->
   
   <link rel="stylesheet" href="components/hero/style.css" data-component-style="hero">
+  <!-- <link rel="stylesheet" href="components/hero-toole/style.css" data-component-style="hero-toole"> -->
   
   <link rel="stylesheet" href="components/what-we-do/style.css" data-component-style="what-we-do"> 
   <!-- <link rel="stylesheet" href="components/what-we-do-cards/style.css" data-component-style="what-we-do-cards"> -->
@@ -54,6 +55,11 @@
   <!-- <link rel="stylesheet" href="components/history-fullwidth/style.css" data-component-style="history-fullwidth"> -->
   <!-- <link rel="stylesheet" href="components/history-cards/style.css" data-component-style="history-cards"> -->
 
+  <link rel="stylesheet" href="components/blogs-toole/style.css" data-component-style="blogs-toole">
+  <!-- <link rel="stylesheet" href="components/blogs-cards/style.css" data-component-style="blogs-cards"> -->
+  <!-- <link rel="stylesheet" href="components/blogs-list/style.css" data-component-style="blogs-list"> -->
+  <!-- <link rel="stylesheet" href="components/blogs-featured/style.css" data-component-style="blogs-featured"> -->
+
   <link rel="stylesheet" href="components/contact/style.css" data-component-style="contact">
   <!-- <link rel="stylesheet" href="components/contact-centered/style.css" data-component-style="contact-centered"> -->
   <!-- <link rel="stylesheet" href="components/contact-cards/style.css" data-component-style="contact-cards"> -->
@@ -75,13 +81,15 @@
   </div>
 
   <main>
-    <div data-component="hero"></div>
+    <div class="vs-section" data-variants="hero,hero-toole">
+      <div data-component="hero"></div>
+    </div>
 
-    <div class="vs-section" data-variants="what-we-do,what-we-do-cards,what-we-do-tabs,what-we-do-feature">
+    <div class="vs-section" data-variants="what-we-do,what-we-do-cards,what-we-do-tabs,what-we-do-feature,what-we-do-toole,what-we-do-toole2">
       <div data-component="what-we-do"></div>
     </div>
 
-    <div class="vs-section" data-variants="ebike-programs,ebike-programs-cards,ebike-programs-overlap,ebike-programs-fullwidth">
+    <div class="vs-section" data-variants="ebike-programs,ebike-programs-cards,ebike-programs-overlap,ebike-programs-fullwidth,ebike-programs-toole">
       <div data-component="ebike-programs"></div>
     </div>
 
@@ -93,12 +101,16 @@
       <div data-component="partners"></div>
     </div>
 
-    <div class="vs-section" data-variants="team,team-list,team-cards,team-spotlight">
+    <div class="vs-section" data-variants="team,team-list,team-cards,team-spotlight,team-toole">
       <div data-component="team"></div>
     </div>
 
-    <div class="vs-section" data-variants="history,history-timeline,history-fullwidth,history-cards">
+    <div class="vs-section" data-variants="history,history-timeline,history-fullwidth,history-cards,history-toole">
       <div data-component="history"></div>
+    </div>
+
+    <div class="vs-section" data-variants="blogs-toole,blogs-cards,blogs-list,blogs-featured">
+      <div data-component="blogs-toole"></div>
     </div>
 
     <div class="vs-section" data-variants="contact,contact-centered,contact-cards,contact-split">
@@ -106,12 +118,13 @@
     </div>
   </main>
 
-  <div class="vs-section" data-variants="footer,footer-columns,footer-minimal,footer-expanded">
+  <div class="vs-section" data-variants="footer,footer-columns,footer-minimal,footer-expanded,footer-toole">
     <div data-component="footer"></div>
   </div>
 
   <script src="js/component-loader.js" defer></script>
   <script src="js/main.js" defer></script>
   <script src="js/variant-selector.js" defer></script>
+  <script src="js/hero-padding.js" defer></script>
 </body>
 </html>

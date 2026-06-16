@@ -35,7 +35,7 @@
 - Caption: 14px uppercase
 
 ## 3. Layout
-- Max content width: **1180px**
+- Max content width: **1380px**
 - Use generous white space.
 - Sections should feel open and breathable.
 - Content containers use subtle shadows and light borders.

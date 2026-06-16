@@ -1,25 +1,123 @@
-.prtn-pill{padding:110px 0}
-.prtn-pill-head{text-align:center;max-width:680px;margin:0 auto 56px}
-.prtn-pill-kicker{display:inline-block;color:var(--smi-green);font-size:12px;text-transform:uppercase;letter-spacing:.28em;font-weight:800;margin-bottom:14px;position:relative;padding:0 26px}
-.prtn-pill-kicker:before,.prtn-pill-kicker:after{content:"";position:absolute;top:50%;width:18px;height:2px;background:var(--smi-green)}
-.prtn-pill-kicker:before{left:0}
-.prtn-pill-kicker:after{right:0}
-.prtn-pill-head h2{font-size:clamp(30px,3.2vw,44px);line-height:1.1;color:var(--smi-blue-900);margin:0 0 14px;font-weight:800;text-transform:none;letter-spacing:.01em}
-.prtn-pill-head p{color:var(--muted);font-size:18px;margin:0}
+.prtn-pill {
+  padding: 110px 0;
+}
+.prtn-pill-head {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 56px;
+}
+.prtn-pill-kicker {
+  display: inline-block;
+  color: var(--smi-green);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-weight: 800;
+  margin-bottom: 14px;
+  position: relative;
+  padding: 0 26px;
+}
+.prtn-pill-kicker:before,
+.prtn-pill-kicker:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 18px;
+  height: 2px;
+  background: var(--smi-green);
+}
+.prtn-pill-kicker:before {
+  left: 0;
+}
+.prtn-pill-kicker:after {
+  right: 0;
+}
+.prtn-pill-head h2 {
+  font-size: clamp(30px, 3.2vw, 44px);
+  line-height: 1.1;
+  color: var(--smi-blue-900);
+  margin: 0 0 14px;
+  font-weight: 800;
+  text-transform: none;
+  letter-spacing: 0.01em;
+}
+.prtn-pill-head p {
+  color: var(--muted);
+  font-size: 18px;
+  margin: 0;
+}
 
-.prtn-pill-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
-.prtn-pill-card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;border:1px solid var(--line);border-radius:999px;padding:18px 28px;min-width:180px;text-decoration:none;transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease, background .25s ease}
-.prtn-pill-a{background:#fff}
-.prtn-pill-b{background:var(--soft)}
-.prtn-pill-card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(5,82,126,.1);border-color:var(--smi-green);background:#fff}
-.prtn-pill-card img{max-height:36px;max-width:140px;width:auto;object-fit:contain;filter:grayscale(.2);transition:filter .25s ease}
-.prtn-pill-card:hover img{filter:grayscale(0)}
-.prtn-pill-label{font-size:11px;text-transform:uppercase;letter-spacing:.14em;font-weight:800;color:var(--muted);transition:color .2s ease}
-.prtn-pill-card:hover .prtn-pill-label{color:var(--smi-blue-900)}
+.prtn-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
+.prtn-pill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 18px 28px;
+  min-width: 180px;
+  text-decoration: none;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+.prtn-pill-a {
+  background: #fff;
+}
+.prtn-pill-b {
+  background: var(--soft);
+}
+.prtn-pill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(5, 82, 126, 0.1);
+  border-color: var(--smi-green);
+  background: #fff;
+}
+.prtn-pill-card img {
+  max-height: 36px;
+  max-width: 140px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(0.2);
+  transition: filter 0.25s ease;
+}
+.prtn-pill-card:hover img {
+  filter: grayscale(0);
+}
+.prtn-pill-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 800;
+  color: var(--muted);
+  transition: color 0.2s ease;
+}
+.prtn-pill-card:hover .prtn-pill-label {
+  color: var(--smi-blue-900);
+}
 
-@media(max-width:620px){
-  .prtn-pill-row{gap:10px}
-  .prtn-pill-card{min-width:140px;padding:14px 20px}
-  .prtn-pill-card img{max-height:30px;max-width:110px}
-  .prtn-pill-label{font-size:10px}
+@media (max-width: 620px) {
+  .prtn-pill-row {
+    gap: 10px;
+  }
+  .prtn-pill-card {
+    min-width: 140px;
+    padding: 14px 20px;
+  }
+  .prtn-pill-card img {
+    max-height: 30px;
+    max-width: 110px;
+  }
+  .prtn-pill-label {
+    font-size: 10px;
+  }
 }
