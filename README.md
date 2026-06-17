@@ -47,6 +47,16 @@ SMI/
     └── footer/        index.html + style.css
 ```
 
+## Deploy
+
+Before pushing to GitHub, bump the cache-bust version so visitors get fresh files:
+
+```bash
+python bump-version.py
+```
+
+This increments the `?v=` query strings across `index.html`, `cache-bust.js`, and all JS/CSS references.
+
 ## How to view
 
 Serve the folder over http (required for component fetching):
