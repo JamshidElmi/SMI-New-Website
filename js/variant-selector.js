@@ -28,7 +28,8 @@
     if (document.querySelector('link[data-variant-style="' + name + '"]')) return;
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = 'components/' + name + '/style.css?v=' + Date.now();
+    const v = (typeof __SMI_VERSION !== 'undefined') ? __SMI_VERSION : '1';
+    link.href = 'components/' + name + '/style.css?v=' + v;
     link.dataset.variantStyle = name;
     document.head.appendChild(link);
   }

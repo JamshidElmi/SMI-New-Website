@@ -13,7 +13,8 @@
 
   function injectStyle(name) {
     return new Promise((resolve) => {
-      const href = COMPONENTS_DIR + name + '/style.css?v=' + Date.now();
+      const v = (typeof __SMI_VERSION !== 'undefined') ? __SMI_VERSION : '1';
+      const href = COMPONENTS_DIR + name + '/style.css?v=' + v;
       if (document.querySelector('link[data-component-style="' + name + '"]')) {
         return resolve();
       }

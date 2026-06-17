@@ -12,6 +12,8 @@ A static single-page homepage for Shared Mobility Inc. (SMI). No build tools, no
 - `js/component-loader.js` — fetches components at runtime via `fetch()`.
 - `js/main.js` — sticky header scroll behavior.
 - `js/variant-selector.js` — live variant switcher UI.
+- `js/cache-bust.js` — defines `__SMI_VERSION` for cache busting. Bump the version when deploying.
+- `js/hero-padding.js` — adjusts hero padding based on active header variant.
 - `SMI Home (2)/` — old reference homepage, read-only. Never modify.
 - `SMI-Design-System-Rules.md` — design system (colors, typography, spacing, rules). Follow this when editing components.
 
