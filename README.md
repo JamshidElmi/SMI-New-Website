@@ -7,7 +7,7 @@ Edit one file, the change shows up everywhere — no copy-paste.
 
 ```
 SMI/
-├── SMI Home.html              # Shell with placeholders (the "source of truth")
+├── index.html                 # Shell with placeholders (the "source of truth")
 ├── css/                       # Global styles shared by all components
 │   ├── base.css               # Variables, reset, .wrap
 │   ├── buttons.css            # .btn, .btn.light
@@ -58,7 +58,7 @@ npx serve .                       # Node
 php -S localhost:8000             # PHP
 ```
 
-VS Code users: install **Live Server**, right-click `SMI Home.html` →
+VS Code users: install **Live Server**, right-click `index.html` →
 "Open with Live Server".
 
 ## Editing workflow
@@ -72,7 +72,7 @@ Sections with multiple design variants have a floating selector pinned to the ri
 
 To add a new variant:
 1. Create `components/<variant-name>/index.html` + `style.css`
-2. Add the variant name to the `data-variants` attribute on the section's `.vs-section` wrapper in `SMI Home.html`
+2. Add the variant name to the `data-variants` attribute on the section's `.vs-section` wrapper in `index.html`
 3. Refresh
 
 # Design System

@@ -7,7 +7,6 @@ import re, pathlib
 ROOT = pathlib.Path(__file__).parent
 FILES = [
     ROOT / 'js' / 'cache-bust.js',
-    ROOT / 'SMI Home.html',
     ROOT / 'index.html',
 ]
 

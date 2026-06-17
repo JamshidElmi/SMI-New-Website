@@ -6,7 +6,7 @@ A static single-page homepage for Shared Mobility Inc. (SMI). No build tools, no
 
 ## Architecture
 
-- `SMI Home.html` — shell with `<div data-component="name">` placeholders. This is the source of truth.
+- `index.html` — shell with `<div data-component="name">` placeholders. This is the source of truth (served by GitHub Pages at root).
 - `components/<name>/` — each folder has `index.html` + `style.css`.
 - `css/` — global shared styles (`base.css`, `buttons.css`, `sections.css`, `responsive.css`, `variant-selector.css`).
 - `js/component-loader.js` — fetches components at runtime via `fetch()`.
@@ -23,7 +23,7 @@ A static single-page homepage for Shared Mobility Inc. (SMI). No build tools, no
 python -m http.server 8000   # Dev server (required — component-loader.js uses fetch)
 ```
 
-VS Code: install **Live Server**, right-click `SMI Home.html` → "Open with Live Server".
+VS Code: install **Live Server**, right-click `index.html` → "Open with Live Server".
 
 ## Variant swap workflow
 
@@ -31,7 +31,7 @@ Sections have multiple design variants (e.g. `projects/`, `projects-grid/`, `pro
 
 To add a new variant to an existing section:
 1. Create the component folder (`components/<variant-name>/index.html` + `style.css`)
-2. Add the variant name to the `data-variants` attribute on the section's `.vs-section` wrapper in `SMI Home.html`
+2. Add the variant name to the `data-variants` attribute on the section's `.vs-section` wrapper in `index.html`
 3. Refresh the browser
 
 **Do NOT forget step 2** — without updating `data-variants`, the selector won't show the new option.
